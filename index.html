@@ -375,22 +375,28 @@
     .hero-divider { height: 30px; }
 
     .scroll-hint {
-      bottom: 2rem;
-      gap: 0.8rem;
-      animation: scrollHintIn 0.6s ease both, scrollHintFloat 2s ease-in-out 1.6s infinite;
-      padding: 0.8rem 1.4rem;
-      background: rgba(232,57,58,0.08);
-      border: 1px solid rgba(232,57,58,0.25);
+      bottom: auto;
+      top: 5rem;
+      gap: 0.6rem;
+      flex-direction: row;
+      animation: scrollHintIn 0.6s ease both, scrollHintFloatTop 2s ease-in-out 1.6s infinite;
+      padding: 0.7rem 1.3rem;
+      background: rgba(232,57,58,0.12);
+      border: 1px solid rgba(232,57,58,0.35);
       border-radius: 100px;
       color: rgba(255,255,255,0.95);
+      box-shadow: 0 4px 20px rgba(232,57,58,0.15);
     }
-    .scroll-mouse { width: 22px; height: 36px; border-color: rgba(255,255,255,0.7); }
-    .scroll-mouse::after { background: var(--red); width: 4px; height: 10px; }
+    .scroll-mouse { display: none; }
     .scroll-hint span { font-size: 0.7rem; font-weight: 600; color: rgba(255,255,255,0.95); }
-    .scroll-chevron span { width: 12px; height: 12px; border-color: var(--red); border-width: 2.5px; }
-    @keyframes scrollHintFloat {
+    .scroll-chevron {
+      flex-direction: row;
+      gap: 1px;
+    }
+    .scroll-chevron span { width: 8px; height: 8px; border-color: var(--red); border-width: 2.5px; }
+    @keyframes scrollHintFloatTop {
       0%, 100% { transform: translateX(-50%) translateY(0); }
-      50% { transform: translateX(-50%) translateY(-8px); }
+      50% { transform: translateX(-50%) translateY(6px); }
     }
 
     .impact-grid { grid-template-columns: repeat(2, 1fr); }
