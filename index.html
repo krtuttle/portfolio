@@ -298,8 +298,10 @@
   .eval-grade.b { color: var(--text); }
   .eval-quote { margin-top: 3rem; padding: 2.5rem; border: 1px solid var(--border); position: relative; }
   .eval-quote::before { content: '"'; position: absolute; top: -0.8rem; left: 2rem; font-family: 'Pretendard', 'Noto Sans KR', sans-serif; font-weight: 800; font-size: 4rem; color: var(--red); line-height: 1; }
+  .eval-quote-label { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; font-weight: 600; }
   .eval-quote p { font-size: 0.9rem; color: var(--muted); line-height: 2; font-style: italic; }
   .eval-quote p strong { color: var(--text); font-style: normal; }
+  .eval-quote-source { margin-top: 1.2rem; font-size: 0.75rem; color: var(--muted); font-style: normal; letter-spacing: 0.04em; text-align: right; }
 
   /* CONTACT */
   .contact { text-align: center; padding: 8rem 3rem; position: relative; overflow: hidden; }
@@ -511,12 +513,14 @@
   <div class="works-intro">
     <div>
       <p class="section-label fade-in">주요 작업물</p>
-      <h2 class="section-title fade-in">유저가 반응한<br>보스들</h2>
+      <h2 class="section-title fade-in">유저가 반응한<br>작업물들</h2>
     </div>
     <p style="font-size: 0.8rem; color: var(--muted); max-width: 280px; text-align: right; line-height: 1.8;" class="fade-in">
-      Marvel Future Fight 내<br>직접 기획·제작한 레이드 보스 및<br>UE5 미공개 신작 프로토타입
+      Marvel Future Fight 내<br>스테이지·보스 기획 및<br>UE5 미공개 신작 프로토타입
     </p>
   </div>
+
+  <p class="section-label fade-in" style="margin-top:2rem;">스테이지 작업물</p>
 
   <div class="works-grid">
 
@@ -527,84 +531,120 @@
       <div class="work-body">
         <p class="work-type" style="color:var(--red)">UE5 · 2025 · 프로토타입</p>
         <h3 class="work-title">Trinity 프로토타입</h3>
-        <p class="work-desc">15~20분 분량으로 게임의 핵심 요소와 조작법 전체를 소개. 몬스터 스킬/AI, 비헤이비어 트리, 몽타주 작업 전담.</p>
-        <div class="work-tags"><span class="tag">스킬·AI 기획</span><span class="tag">비헤이비어 트리</span><span class="tag">FUN QA 주도</span><span class="tag">이펙트 기획</span></div>
-        <p class="work-user">핵심 관련 인사 모두 프로토타입을 끝까지 플레이하고 매우 긍정적인 반응을 얻어 결과로 돌출</p>
+        <p class="work-desc">15~20분 분량으로 게임의 핵심 요소와 조작법 전체를 소개. NPC 스킬·AI·비헤이비어 트리·몽타주 제작, 스테이지 네비게이션·리젠 포인트 배치 전담.</p>
+        <div class="work-tags"><span class="tag">NPC 스킬·AI</span><span class="tag">비헤이비어 트리</span><span class="tag">스테이지 설계</span><span class="tag">FUN QA 주도</span></div>
+        <p class="work-user">핵심 인사 모두 몰입하여 프로토타입 완주, 매우 긍정적 반응 · 긍정적 결과 도출</p>
       </div>
     </div>
 
     <div class="work-card fade-in">
       <div class="work-thumb">
-        <img src="https://img.youtube.com/vi/Rnz5ALqJwDM/maxresdefault.jpg" alt="도르마무 월드 보스 레이드">
+        <img src="https://img.youtube.com/vi/Q7g9DILY2mQ/maxresdefault.jpg" alt="더마블스 1챕터">
+        <div class="work-thumb-overlay"></div>
+        <span class="work-thumb-badge teal">몰입형 스테이지 · 2023</span>
+      </div>
+      <div class="work-body">
+        <p class="work-type" style="color:#4ecdc4">MFF · 레전더리 배틀</p>
+        <h3 class="work-title">더마블스 1챕터</h3>
+        <p class="work-desc">신규 캐릭터의 광역기·회피기를 어필하는 몬스터 배치와 기믹 설계. 시네마틱과 이어지는 스테이지 구성으로 몰입감 극대화.</p>
+        <div class="work-tags"><span class="tag">신캐 어필</span><span class="tag">몰입 연출</span><span class="tag">반복 유잼 설계</span><span class="tag">NPC AI</span></div>
+        <p class="work-user">신규 캐릭터 특장점 어필 + 반복 플레이 시에도 지루하지 않은 스테이지</p>
+      </div>
+    </div>
+
+    <div class="work-card fade-in">
+      <div class="work-thumb">
+        <img src="https://img.youtube.com/vi/XQdN9336Vf8/maxresdefault.jpg" alt="앤트맨 퀀텀매니아 1챕터">
+        <div class="work-thumb-overlay"></div>
+        <span class="work-thumb-badge gold">몰입형 스테이지 · 2023</span>
+      </div>
+      <div class="work-body">
+        <p class="work-type" style="color:var(--gold)">MFF · 레전더리 배틀</p>
+        <h3 class="work-title">앤트맨 퀀텀매니아 1챕터</h3>
+        <p class="work-desc">아군 NPC와 자연스러운 협동 전투 설계. ANPC가 시야를 가리지 않도록 연출하고, 보스전에 다채로운 조작감 부여.</p>
+        <div class="work-tags"><span class="tag">아군 NPC AI</span><span class="tag">몰입 연출</span><span class="tag">보스전 조작감</span><span class="tag">밸런스</span></div>
+        <p class="work-user">아군 NPC가 자연스럽게 협동 · 확실한 회피·공격 타이밍 부여</p>
+      </div>
+    </div>
+
+    <div class="work-card fade-in">
+      <div class="work-thumb">
+        <img src="https://img.youtube.com/vi/Ht3e1qKRgSM/maxresdefault.jpg" alt="유도 속박 물방울 기믹">
+        <div class="work-thumb-overlay"></div>
+        <span class="work-thumb-badge teal">스테이지 기믹</span>
+      </div>
+      <div class="work-body">
+        <p class="work-type" style="color:#4ecdc4">MFF · 레전더리 보스</p>
+        <h3 class="work-title">유도 속박 물방울</h3>
+        <p class="work-desc">플레이어 상태에 따른 실시간 보스 행동 전환. 투명 기믹 오브젝트가 물방울을 시전하고, 피격 시 디버프·페이즈 전환까지 연동.</p>
+        <div class="work-tags"><span class="tag">보스·오브젝트 연동 AI</span><span class="tag">실시간 전환</span><span class="tag">디버프 시스템</span></div>
+        <p class="work-user">기믹 "물방울"을 피하며 보스를 공격 · 피격 시 조이스틱을 흔들어 회피</p>
+      </div>
+    </div>
+
+    <div class="work-card fade-in">
+      <div class="work-thumb">
+        <img src="https://img.youtube.com/vi/Yp-A8Xd6cbc/maxresdefault.jpg" alt="보스 공격 활용 기믹 파괴">
+        <div class="work-thumb-overlay"></div>
+        <span class="work-thumb-badge gold">스테이지 기믹</span>
+      </div>
+      <div class="work-body">
+        <p class="work-type" style="color:var(--gold)">MFF · 싱글 보스 레이드</p>
+        <h3 class="work-title">보스 공격 활용 기믹 파괴</h3>
+        <p class="work-desc">플레이어·보스·오브젝트 간 복합 상호작용. 운석 뒤로 숨어 보스의 투사체로 운석을 파괴하는 다중 통신 AI 패턴 설계.</p>
+        <div class="work-tags"><span class="tag">다중 통신 AI</span><span class="tag">코인 시스템</span><span class="tag">비헤이비어 트리</span></div>
+        <p class="work-user">운석 뒤로 숨어 보스의 공격을 막고 운석을 파괴 · 실패 시 강력한 대미지</p>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="section-label fade-in" style="margin-top:3rem;">보스 작업물</p>
+
+  <div class="works-grid">
+
+    <div class="work-card fade-in">
+      <div class="work-thumb">
+        <img src="https://img.youtube.com/vi/Rnz5ALqJwDM/maxresdefault.jpg" alt="도르마무 3인 협동 레이드">
         <div class="work-thumb-overlay"></div>
         <span class="work-thumb-badge gold">3인 협동 레이드 · 2022</span>
       </div>
       <div class="work-body">
         <p class="work-type" style="color:var(--gold)">MFF · 거대 보스 레이드</p>
         <h3 class="work-title">도르마무</h3>
-        <p class="work-desc">미숙한 플레이어가 패턴을 자연스럽게 학습하고, 숙련자 간 경쟁을 유발하는 구조 설계. "무한한 반복"이라는 캐릭터성을 패턴에 직접 녹여냄.</p>
-        <div class="work-tags"><span class="tag">핵심 시스템 기획</span><span class="tag">AI·내비게이션</span><span class="tag">BGM 기획</span><span class="tag">밸런스</span></div>
-        <p class="work-user">드디어 레이드다운 레이드가 나온느낌 — 이게 도르마무여 아르고스여</p>
+        <p class="work-desc">미숙한 1인으로 인한 스쿼드 연대 책임 불만 해소. 관찰 학습, 역할 분담, 경쟁심 유발 3대 기획 축으로 설계.</p>
+        <div class="work-tags"><span class="tag">역할 수행</span><span class="tag">관찰 학습</span><span class="tag">경쟁 유발</span><span class="tag">BGM 기획</span></div>
+        <p class="work-user">드디어 레이드다운 레이드가 나온 느낌 — 이게 거대 보스 레이드지</p>
       </div>
     </div>
 
     <div class="work-card fade-in">
       <div class="work-thumb">
-        <img src="https://img.youtube.com/vi/xbUGkgiJzDI/maxresdefault.jpg" alt="다크피닉스 월드 보스 레전드">
+        <img src="https://img.youtube.com/vi/xbUGkgiJzDI/maxresdefault.jpg" alt="다크피닉스 싱글 보스 레이드">
         <div class="work-thumb-overlay"></div>
         <span class="work-thumb-badge teal">싱글 보스 레이드 · 2022</span>
       </div>
       <div class="work-body">
         <p class="work-type" style="color:#4ecdc4">MFF · 월드 보스 레전드</p>
         <h3 class="work-title">다크 피닉스</h3>
-        <p class="work-desc">전조증상 명확화, 하이리스크-하이리턴, 탄막 심화를 3대 기획 축으로. 코믹스 서사를 패턴에 직접 반영한 연출 기획.</p>
-        <div class="work-tags"><span class="tag">2페이즈 전환</span><span class="tag">투명 기믹</span><span class="tag">이펙트 기획</span><span class="tag">UI 명세</span></div>
-        <p class="work-user">어렵지만 짜증나지는 않습니다. 확실히 재밌게 즐기기 아주 나이스한 게임 모드</p>
+        <p class="work-desc">탄막 심화, 명확한 전조, 하이리스크-하이리턴 3대 기획 축. 코믹스 에피소드 서사를 보스 패턴에 직접 반영.</p>
+        <div class="work-tags"><span class="tag">탄막 심화</span><span class="tag">명확한 전조</span><span class="tag">하이리스크 하이리턴</span></div>
+        <p class="work-user">요즘 한 인겜 컨텐츠 중에서 가장 재미있었던 것 같습니다</p>
       </div>
     </div>
 
     <div class="work-card fade-in">
       <div class="work-thumb">
-        <img src="https://img.youtube.com/vi/wdJmFklDYJs/hqdefault.jpg" alt="블랙스완 월드 보스+">
+        <img src="https://img.youtube.com/vi/WkP5IWmriW4/maxresdefault.jpg" alt="블랙스완 월드 보스+">
         <div class="work-thumb-overlay"></div>
         <span class="work-thumb-badge red">싱글 보스 레이드+ · 2024</span>
       </div>
       <div class="work-body">
         <p class="work-type" style="color:var(--red)">MFF · 월드 보스 레전드+</p>
         <h3 class="work-title">블랙 스완</h3>
-        <p class="work-desc">신규 능력치 대미지를 핵심 공략 요소로 삼아 보상·패널티 구간 설계. 보스 상태별 카메라 연출로 몰입감 강화.</p>
-        <div class="work-tags"><span class="tag">방어막 시스템</span><span class="tag">BGM 기획</span><span class="tag">카메라 연출</span><span class="tag">밸런스</span></div>
-        <p class="work-user">몇년만에 제대로 나온 월보 — 블랙스완은 정말 멋있습니다, 전투는 단순하지만 꽤나 매력적</p>
-      </div>
-    </div>
-
-    <div class="work-card fade-in">
-      <div class="work-thumb">
-        <img src="https://img.youtube.com/vi/Yp-A8Xd6cbc/maxresdefault.jpg" alt="보스·오브젝트 복합 상호작용">
-        <div class="work-thumb-overlay"></div>
-        <span class="work-thumb-badge gold">기술 역량 · AI 구조</span>
-      </div>
-      <div class="work-body">
-        <p class="work-type" style="color:var(--gold)">복합 상호작용 설계</p>
-        <h3 class="work-title">보스·오브젝트<br>복합 상호작용 AI</h3>
-        <p class="work-desc">운석 오브젝트 AI와 보스 AI를 연동해 코인 획득·폭발 명령을 실시간 교환하는 복합 구조. 비헤이비어 트리 직접 구현.</p>
-        <div class="work-tags"><span class="tag">보스 AI</span><span class="tag">오브젝트 AI</span><span class="tag">비헤이비어 트리</span></div>
-        <p class="work-user">플레이어·보스·오브젝트 3자 실시간 상호작용으로 전략적 플레이 유도</p>
-      </div>
-    </div>
-
-    <div class="work-card fade-in">
-      <div class="work-thumb">
-        <img src="https://img.youtube.com/vi/uC9oeD3Vjuo/maxresdefault.jpg" alt="스테이지 기믹 실시간 행동 전환">
-        <div class="work-thumb-overlay"></div>
-        <span class="work-thumb-badge teal">기술 역량 · 실시간 전환</span>
-      </div>
-      <div class="work-body">
-        <p class="work-type" style="color:#4ecdc4">실시간 행동 전환 설계</p>
-        <h3 class="work-title">기믹 수행에 따른<br>보스 실시간 전환</h3>
-        <p class="work-desc">기믹 성공/실패 여부에 따라 보스 AI가 즉시 페이즈 전환. 강제 명령 송신 방식으로 오브젝트 AI와 연동.</p>
-        <div class="work-tags"><span class="tag">실시간 AI 전환</span><span class="tag">디버프 시스템</span><span class="tag">페이즈 설계</span></div>
-        <p class="work-user">기믹 성공/실패가 보스의 행동을 즉각 바꾸는 반응형 전투 설계</p>
+        <p class="work-desc">신규 능력치 대미지를 핵심 공략 요소로 삼아 보상·패널티 구간 설계. 유저 공격 중심의 패턴 구성과 보스 상태별 카메라 연출.</p>
+        <div class="work-tags"><span class="tag">신규 능력치 활용</span><span class="tag">보상 구간</span><span class="tag">유저 공격 중심</span><span class="tag">카메라 연출</span></div>
+        <p class="work-user">블랙스완은 정말 멋있습니다, 전투는 단순하지만 꽤나 매력적</p>
       </div>
     </div>
 
@@ -670,7 +710,9 @@
     <div class="eval-item fade-in"><div class="eval-year">2025</div><div class="eval-grade b">B+</div></div>
   </div>
   <div class="eval-quote fade-in">
+    <p class="eval-quote-label">2022 하반기 평가 中 발췌</p>
     <p><strong>업무 처리가 빠르고 많은 업무의 일정 관리를 빈틈없이 해내어 신뢰가 높습니다.</strong> 엑셀 함수나 파이썬을 공부하여 업무에 적용하거나 지라를 이용해 히스토리를 남겨 파트 내 효율성 증대에 기여하고 있습니다. 말은 못 이상을 해내려 노력하고 솔선수범하여 자발적으로 업무를 맡으려 합니다.</p>
+    <p class="eval-quote-source">— 사내 인사 평가 · 평가자 코멘트</p>
   </div>
 </section>
 
